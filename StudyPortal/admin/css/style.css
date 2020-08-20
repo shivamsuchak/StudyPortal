@@ -1,0 +1,55 @@
+*{margin: 0; padding: 0; font-family: "Lucida Grande", "Lucida Sans Unicode"}
+
+#header{
+	width: 100%;
+	height: 60px;
+	background: #cc66ff; 
+}
+
+#logo{width: 20%; height: 60px; float: left}
+#logo h2{text-align: center; line-height: 60px;}
+#logo h2 a{text-decoration: none; color: #667292; text-shadow: 2px 2px 2px #000}
+
+
+#title{width: 60%; height: 60px; float: left;}
+#title h2{color: #fff; text-align: center; text-shadow: 2px 2px 2px #000; line-height: 50px;}
+
+#logout{width: 20% height: 60px; float: left;}
+#logout h2{text-align: center; line-height: 60px;}
+#logout h2 a{text-decoration: none; color: #fff}
+#logout h2:hover{background: #cc99ff}
+
+
+
+
+
+#bodyleft{width: 18%; height: 660px; background: #cc66ff; float: left; overflow-y: auto;}
+#bodyleft h3{font-weight: bold; margin-bottom: 2%; line-height: 30px; color: #fff; text-align: center; font-size: 14px; background: #cc99ff; height:30px;}
+#bodyleft ul{list-style-position: none;}
+#bodyleft ul li{transition: 0.3s; width: 100%; height: 30px; line-height: 30px; padding-left: 5%; box-sizing: border-box; font-weight: bold;}
+#bodyleft ul li a{text-decoration: none; transition: 0.3s; color: #fff; font-size: 14px; display: block;}
+#bodyleft ul li:hover{background: #fff;}
+#bodyleft ul li a:hover{color: #cc66ff; font-weight:bold; font-size: 16px; padding-left: 5%;}
+
+
+#bodyright{width: 82%; height: 660px; background: #fff; float: left; overflow-y: auto;}
+#bodyright h3{margin-bottom: 2%; line-height: 30px; color: #fff; text-align: center; font-size: 14px; background: #cc99ff; height:30px; font-weight: normal;}
+
+#add{width: 100%; padding: 2%; box-sizing: border-box;}
+#add details{width: 60%; margin: auto;}
+#add details summary{line-height: 30px; cursor: pointer; text-align: center; width: 100%; height: 30px; color: #cc66ff; border: 1px solid #cc66ff; font-size: 12px;}  
+#add details form{background: #cc66ff; padding: 3%; outline: none; box-sizing: border-box; border: solid #fff;}
+#add details form input{ width: 100%; height: 30px; font-size: 12px; margin-bottom: 2%; outline: none; padding-left: 3%; box-sizing:border-box; }
+#add details form select{ width: 100%; height: 30px; font-size: 12px; margin-bottom: 2%; outline: none; padding-left: 3%; box-sizing:border-box; }
+#add details form button{width: 20% height:30px; font-size: 12px; color: #fff; background: none; outline: line; border: 1px solid #fff; padding: 1.5%;}
+#add details form button:hover{cursor: pointer; background: #fff; color:#cc66ff;}
+#add table{width:60.2%; margin: auto;  border: solid #cc66ff;}
+#add table tr th{height: 35px; background: #cc66ff; color: #fff; text-align: left; padding-left:2%}
+#add table tr td{color:#000; height: 30px; padding-left: 2%; box-sizing: border-box;}
+
+#edit_form{width: 50%; margin: auto; padding: 2%; box-sizing: border-box;}
+#edit_form input{width: 100%; height: 30px; font-size: 12px; margin-bottom: 2%; outline: none; padding-left: 3%; box-sizing: border-box; }
+#edit_form select{width: 100%; height: 30px; font-size: 12px; margin-bottom: 2%; outline: none; padding-left: 3%; box-sizing: border-box; }
+#edit_form button{width: 20% height:30px; font-size: 12px; color: #cc66ff; background: none; outline: line; border: 1px solid #cc66ff; padding: 1%;}
+#edit_form button:hover{cursor: pointer; background: #cc66ff; color:#fff;}
+
