@@ -309,6 +309,51 @@
 		}	
 	}
 
+	function edit_term()
+	{
+		include("inc/db.php");
+			
+		if(isset($_GET['edit_term']))
+		{
+
+			$id=$_GET['edit_term'];
+//			$cat_name=$_GET['cat_name'];
+
+			$get_cat=$pdo->prepare("select * from term where t_id='$id'");
+			$get_cat->setFetchMode(PDO:: FETCH_ASSOC);
+			$get_cat->execute();
+			$row=$get_cat->fetch();
+			
+			echo"<h3>Edit T & C</h3>
+			<form id='edit_form' method='post' enctype='multipart/form-data'>
+				<select name='for_whom'>
+					<option value='".$row['for_whom']."'>".$row['for_whom']."</option>
+					<option value='student'>Student</option>
+					<option value='teacher'>Teacher</option>";
+					 echo select_cat();
+			echo "</select>
+				<input type='text' name='term' value='".$row['term']."' placeholder='Enter Category Here'/>
+				<center><button name='edit_t'>Edit T & C</button></center>
+			</form>";
+
+			if(isset($_POST['edit_t'])){
+				$cat_name=$_POST['term'];
+				$cat_id=$_POST['for_whom'];
+				$up=$pdo->prepare("update term set term='$cat_name',for_whom='$cat_id' where t_id='$id'");
+ 
+				if($up->execute())
+				{ 
+					echo "<script>alert('Terms Upadted Successfully')</script>";
+					echo "<script>window.open('index.php?terms', '_self')</script>";
+				}
+				else
+				{
+					echo "<script>alert('Something went wrong Try Again later!')</script>";
+					echo "<script>window.open('index.php', '_self')</script>";
+				}
+			}
+		}
+	}
 
 
 	

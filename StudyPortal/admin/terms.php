@@ -1,7 +1,7 @@
 <div id="bodyright">
 	<?php 
-		if(isset($_GET['edit_cat'])) { 
-			echo edit_cat();
+		if(isset($_GET['edit_term'])) { 
+			echo edit_term();
 		} else {
 	?>
 	<h3>View Terms & Conndition</h3>
@@ -23,7 +23,8 @@
 				<th>Sr. No</th>
 				<th>Terms</th>
 				<th>For Whom</th>
-				<th>Action</th>
+				<th>Edit</th>
+				<th>Delete</th>
 				<?php echo view_term(); ?>
 			</tr>
 		</table>
